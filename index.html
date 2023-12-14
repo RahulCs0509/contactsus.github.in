@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("aBAXh0IhEmyN1J7Fg");
+   })();
+</script>
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">IT Solutions</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://rahulcs0509.github.io/pprk.github.io/" target="_blank">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <!-- <div class="container border mt-3 bg-light"> -->
+        <div class="row">
+          <div class="col-md-6 p-5 bg-primary text-white">
+            <h1>Brief about IT solutions!</h1>
+            <p>
+                Software solutions form another critical component of IT offerings. These encompass a wide array of applications and platforms designed to address specific business needs. Enterprise resource planning (ERP) systems, customer relationship management (CRM) software, and collaboration tools are just a few examples of software solutions that businesses use to streamline processes, improve communication, and enhance decision-making.
+            </p>
+            <p>Cloud computing has emerged as a transformative force in IT solutions. Cloud services provide scalable and flexible computing resources over the internet, enabling organizations to access and deploy applications without the need for significant upfront investments in hardware. This shift to the cloud has revolutionized the way businesses operate, offering cost savings, agility, and the ability to quickly adapt to changing market conditions.</p>
+          </div>
+          <div class="col-md-6 border-left py-3">
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>Contact me</p>
+                  <!-- <h2 class="text-uppercase mb-4 font-weight-bold">Contact me.</h2> -->
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Get in <cite title="Source Title">Touch</cite>
+                </figcaption>
+              </figure>
+            <div class="form-group">
+              <h5 for="name">Name</h5>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+              />
+            </div>
+            <div class="form-group">
+              <h5 for="email">Email</h5>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+              />
+            </div>
+             <div class="form-group" >
+              <h5 for="phone">Phone</h5>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Enter Number"
+                />
+            </div>
+            <div class="form-group">
+              <h5 for="message">Message</h5>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div class=text-center>
+                <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #929fba"
+            >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                IT Solutions
+              </h6>
+              <p>
+                IT solutions leverage technology to address business needs, integrating software, hardware, and services. They streamline operations, boost efficiency, and align with organizational goals, playing a vital role in optimizing business processes.
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+              <p>
+                <a class="text-white">wordpress developer</a>
+              </p>
+              <p>
+                <a class="text-white">Web developer</a>
+              </p>
+              <p>
+                <a class="text-white">Frontend developer</a>
+              </p>
+              <p>
+                <a class="text-white">Bankend developer</a>
+              </p> <p>
+                <a class="text-white">Full stack developer</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> Delhi NCR, UP 201301, IN</p>
+              <p><i class="fas fa-envelope mr-3"></i> developerrktech@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +91 9304224945</p>
+              <p><i class="fas fa-print mr-3"></i> +91 7024401466</p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+  
+              <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="https://www.facebook.com/people/%C4%9A%C5%99-%C5%94%C3%A6h%C5%B1%C5%82-%C5%98%C3%A6%C3%AE/pfbid02KuXCY6QeEk3Gx4AFDpr4mgYz64nNoWj7kTRpdSTSGAceWDXgJLC2oYSR2Yyv9uEwl/"target="_blank"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #55acee;"
+        href="https://twitter.com/rahulrai4234"target="_blank"
+        role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Whatapps -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #6aeaa4;"
+        href="https://api.whatsapp.com/message/KFVZ4UP3CYTRM1?autoload=1&app_absent=0 "target="_blank"
+        role="button"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="https://www.instagram.com/mr_rebel_rai/"target="_blank"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="https://www.linkedin.com/in/rahulkumar-26b2bb171/"target="_blank"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #333333;"
+        href="https://github.com/RahulCs0509"target="_blank"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2023 Copyright:All rights reserved.
+        <a class="text-white" href= "index.html"
+           > Rahul Kumar</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+</html>
